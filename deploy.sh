@@ -1,7 +1,7 @@
 sudo apt update -y
 sudo apt upgrade -y
 sudo apt install -y build-essential zsh ripgrep fzf neovim git tree tmux
-ssh-keygen -t rsa -b 4096
+#ssh-keygen -t rsa -b 4096
 
 # Windows Terminal
 curl -Ol 'https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/FiraCode/Regular/complete/Fira%20Code%20Regular%20Nerd%20Font%20Complete%20Mono%20Windows%20Compatible.ttf' /mnt/c/Windows/Fonts/
@@ -26,9 +26,8 @@ cp init.vim $HOME/.config/nvim/
 cp coc-settings.json $HOME/.config/nvim/
 
 # Nodejs
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
-nvm install lts
-nvm use lts
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | zsh
+nvm install --lts
 
 
  
