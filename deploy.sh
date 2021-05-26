@@ -4,7 +4,10 @@ sudo apt install -y build-essential zsh ripgrep fzf neovim git tree tmux
 #ssh-keygen -t rsa -b 4096
 
 # Windows Terminal
-curl -Ol 'https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/FiraCode/Regular/complete/Fira%20Code%20Regular%20Nerd%20Font%20Complete%20Mono%20Windows%20Compatible.ttf' /mnt/c/Windows/Fonts/
+(
+cd /mnt/c/Windows/Fonts/
+curl -Ol 'https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/FiraCode/Regular/complete/Fira%20Code%20Regular%20Nerd%20Font%20Complete%20Mono%20Windows%20Compatible.ttf' 
+)
 cp settings.json /mnt/c/Users/sjhar/AppData/Local/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState/settings.json
 
 # Oh-my-zsh
