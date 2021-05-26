@@ -24,6 +24,9 @@ cp tmux.conf $HOME/.tmux.conf
 mkdir -p $HOME/.config/nvim
 cp init.vim $HOME/.config/nvim/
 cp coc-settings.json $HOME/.config/nvim/
+sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+
 
 # Nodejs
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | zsh
